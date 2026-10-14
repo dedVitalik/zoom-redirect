@@ -12,18 +12,16 @@
 </head>
 <body>
 <h2>Відкриваю Zoom…</h2>
-<p><a id="open" class="btn" href="#">Відкрити Zoom</a></p>
+<p><a id="open" class="btn" href="https://us06web.zoom.us/j/86788304406?pwd=s1B4ZWKo8z5aQCI7FW6r9GIeG8a2R9.1">Відкрити Zoom</a></p>
 <p>Якщо не відкрилось, введи вручну:<br>
 ID: <code>867 8830 4406</code><br>
 Пароль: <code>424696</code></p>
 <script>
   var confno = '86788304406';
-  var pwd = '424696';
+  var pwd = 's1B4ZWKo8z5aQCI7FW6r9GIeG8a2R9.1';
   var mobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
   var scheme = mobile ? 'zoomus' : 'zoommtg';
-  var link = scheme + '://zoom.us/join?action=join&confno=' + confno + '&pwd=' + pwd;
-  document.getElementById('open').href = link;
-  location.href = link;
+  location.href = scheme + '://us06web.zoom.us/join?action=join&confno=' + confno + '&pwd=' + pwd;
 </script>
 </body>
 </html>
